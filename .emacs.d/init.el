@@ -21,3 +21,5 @@
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/conf")
 
+;; 00-basic.el
+;; 01-display.el
