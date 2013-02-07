@@ -28,3 +28,8 @@
       (auto-complete-mode t))))
 
 (add-hook 'php-mode-hook 'php-completion-hook)
+
+;; smarty-mode
+(autoload 'smarty-mode "smarty-mode")
+(setq auto-mode-alist
+      (cons '("\\.tpl\\'" . smarty-mode) auto-mode-alist))
