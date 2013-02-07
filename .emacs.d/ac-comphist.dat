@@ -1,22 +1,60 @@
-((("top" .
-   [1 0 0])
-  ("jaspace.el" .
-   [0 1 0 0 0 0 0 0 0 0])
-  ("require" .
-   [1 0 1 0 0 0 0])
-  ("po" .
+((("ruby-mode-hooks" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add-hook" .
+   [1 0 0 0 0 0 0 0])
+  ("ruby-mode-hook" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ruby-block-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ruby-electric-mode" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("defun" .
+   [1 0 0 0 0])
+  ("ruby-mode" .
+   [1 0 0 0 0 0 0 0 0])
+  ("ruby" .
+   [3 0 0 0])
+  ("de" .
    [1 0])
-  ("popwin" .
-   [2 0 0 0 0 0])
-  ("setq" .
+  ("inf-ruby" .
+   [2 0 0 0 0 0 0 0])
+  ("inf-ruby-keys" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("in" .
+   [5 0])
+  ("run-ruby" .
+   [1 0 0 0 0 0 0 0])
+  ("autoload" .
+   [1 0 0 0 0 0 0 0])
+  ("ruby-block-highlight-toggle" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ruby-block" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("when" .
    [1 0 0 0])
-  ("display-buffer-function" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("popwin:display-buffer" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("global-set-key" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("nil" .
+   [2 0 0])
+  ("ruby-electric" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("dired-jump-other-window" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("kbd" .
    [1 0 0])
-  ("dired-jump-other-window" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("global-set-key" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("popwin:display-buffer" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("display-buffer-function" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("setq" .
+   [2 0 0 0])
+  ("popwin" .
+   [2 0 0 0 0 0])
+  ("po" .
+   [1 0])
+  ("require" .
+   [2 0 1 0 1 0 0])
+  ("jaspace.el" .
+   [0 1 0 0 0 0 0 0 0 0])
+  ("top" .
+   [1 0 0])))
