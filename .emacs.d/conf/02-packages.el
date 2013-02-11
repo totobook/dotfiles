@@ -65,3 +65,12 @@
 (global-set-key (kbd "C-x C-d") 'dired-jump-other-window)
 ; undo-tree下部に表示
 (push '(" *undo-tree*" :width 0.3 :position bottom) popwin:special-display-config)
+
+;; flymake
+(require 'flymake)
+
+;; direx
+;; http://cx4a.blogspot.jp/2011/12/popwineldirexel.html
+(require 'direx)
+(push '(direx:direx-mode :position top :dedicated t) popwin:special-display-config)
+(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
