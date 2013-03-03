@@ -9,11 +9,13 @@
 
 ;; php-modeのインデント設定
 (defun php-indent-hook ()
-  (setq indent-tabs-mode t)
-  (setq c-bacis-offset 2)
-  (setq c-basic-offset 'case label '+)  ; switch文のcaseラベル
-  (setq c-set-offset 'arglist-intro '+) ; 配列の最初の要素が開業した場合
-  (setq c-set-offset 'arglist-close 0)) ; 配列の閉じカッコ
+	(setq indent-tabs-mode t)
+	(setq c-bacis-offset 2)
+	(c-set-style "stroustrup")
+	(c-set-offset 'case-label' 4)
+	(c-set-offset 'arglist-intro' 4)
+	(c-set-offset 'arglist-cont-nonempty' 4)
+	(c-set-offset 'arglist-close' 0)))
 
 (add-hook 'php-mode-hook 'php-indent-hook)
 

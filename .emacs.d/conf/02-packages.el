@@ -61,7 +61,7 @@
 (require 'popwin)
 (setq display-buffer-function 'popwin:display-buffer)
 ; dird-xを上部に表示
-(push '(dired-mode :position top) popwin:special-display-config)
+(push '(dired-mode :position top :dedicated t) popwin:special-display-config)
 (global-set-key (kbd "C-x C-d") 'dired-jump-other-window)
 ; undo-tree下部に表示
 (push '(" *undo-tree*" :width 0.3 :position bottom) popwin:special-display-config)
