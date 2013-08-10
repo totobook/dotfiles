@@ -10,12 +10,15 @@
 ;; php-modeのインデント設定
 (defun php-indent-hook ()
 	(setq indent-tabs-mode t)
-	(setq c-bacis-offset 2)
+	(setq tab-width 4)
+	(setq c-bacis-offset 4)
 	(c-set-style "stroustrup")
 	(c-set-offset 'case-label' 4)
+	(c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
+	(c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)
 	(c-set-offset 'arglist-intro' 4)
 	(c-set-offset 'arglist-cont-nonempty' 4)
-	(c-set-offset 'arglist-close' 0)))
+	(c-set-offset 'arglist-close' 0))
 
 (add-hook 'php-mode-hook 'php-indent-hook)
 

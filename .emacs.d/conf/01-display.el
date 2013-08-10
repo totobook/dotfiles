@@ -19,9 +19,6 @@
 ;; 文字の色つけ
 (global-font-lock-mode t)
 
-;; 行末の空白を削除
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
 ;; tab幅4
 (setq-default tab-width 2)
 
