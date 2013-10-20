@@ -27,18 +27,24 @@
 
 ;; タブ文字と全角スペースを可視化
 (setq whitespace-style
-      '(tabs tab-mark spaces space-mark))
+			'(tabs tab-mark spaces space-mark))
 (setq whitespace-space-regexp "\\(\x3000+\\)")
 (setq whitespace-display-mappings
-      '((space-mark ?\x3000 [?\□])
-        (tab-mark   ?\t   [?\xBB ?\t])
-        ))
+			'((space-mark ?\x3000 [?\□])
+				(tab-mark   ?\t   [?\xBB ?\t])
+				))
 (require 'whitespace)
 (global-whitespace-mode 1)
 (set-face-foreground 'whitespace-space "LightSlateGray")
 (set-face-background 'whitespace-space "DarkSlateGray")
 (set-face-foreground 'whitespace-tab "LightSlateGray")
 (set-face-background 'whitespace-tab "DarkSlateGray")
+
+;; 常にバッファ左に行番号を表示する
+;(global-linum-mode 1)
+
+;; 4桁文を予め行番号ように確保する
+;(setq linum-format "%4d")
 
 ;; ------------------------------------------------------------
 ;; @ mode-line

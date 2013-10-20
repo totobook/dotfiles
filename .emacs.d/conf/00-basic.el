@@ -10,6 +10,9 @@
 ;; globalなC-zを無効化
 (global-unset-key "\C-z")
 
+;; M-gで入力した行にジャンプ
+(global-set-key (kbd "M-g") 'goto-line)
+
 ;; ------------------------------------------------------------
 ;; @ basic
 
@@ -50,6 +53,6 @@
 
 ;; 1行ずつスクロール
 (setq scroll-conservatively 35
-      scroll-margin 0
-      scroll-step 1)
+			scroll-margin 0
+			scroll-step 1)
 (setq comint-scroll-show-maximum-output t)

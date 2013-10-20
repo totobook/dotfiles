@@ -74,3 +74,9 @@
 (require 'direx)
 (push '(direx:direx-mode :position top :dedicated t) popwin:special-display-config)
 (global-set-key (kbd "C-x C-j") 'direx:jump-to-directory-other-window)
+
+;; smartchr.el
+;; http://emacs.g.hatena.ne.jp/k1LoW/20101211/1292046538
+(require 'smartchr)
+(global-set-key (kbd "=") (smartchr '(" = " " == " " === ")))
+
