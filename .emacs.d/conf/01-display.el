@@ -19,8 +19,9 @@
 ;; 文字の色つけ
 (global-font-lock-mode t)
 
-;; tab幅4
+;; tab幅2
 (setq-default tab-width 2)
+(setq c-basic-offset 2)
 
 ;; インデントにタブ文字を使用
 (setq-default indent-tabs-mode t)

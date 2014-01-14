@@ -101,3 +101,9 @@
 	(setq web-mode-script-offset 2)
 	(setq web-mode-php-offset    2))
 (add-hook 'web-mode-hook 'web-mode-hook)
+
+;; markdown-mode.el
+;; markdown-mode
+(autoload 'markdown-mode "markdown-mode"
+					"Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
