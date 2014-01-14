@@ -1,16 +1,10 @@
-dotfilesの種類
+個人的dotfilesのまとめ
 
-.tmux.conf
-.vimrc
-.emacs.d
+# 使い方
 
-clone from github
-git clone git@github.com:totobook/dotfiles.git
-
-使い方
-cd
+```
+cd ~/
 ln -s dotfiles/.tmux.conf .tmux.conf
 ln -s dotfiles/.vimrc .vimrc
 ln -s dotfiles/.emacs.d .emacs.ds
-
-まだ使い方よくわかんない(´・ω・｀)
+```
