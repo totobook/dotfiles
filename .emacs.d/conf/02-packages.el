@@ -80,3 +80,24 @@
 (require 'smartchr)
 (global-set-key (kbd "=") (smartchr '(" = " " == " " === ")))
 
+;; web-mode.el
+;; http://fukuyama.co/web-mode
+(require 'web-mode)
+
+; emacs23以下の互換
+(when (< emacs-major-version 24)
+	(defalias 'prog-mode 'fundamental-mode))
+
+; 適用する拡張子
+(add-to-list 'auto-mode-alist '("\\.html$"     . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.hp$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb$"      . web-mode))
+
+; インデント数
+(defun web-mode-hook()
+	"Hooks for Web mode."
+	(setq web-mode-html-offset   2)
+	(setq web-mode-css-offset    2)
+	(setq web-mode-script-offset 2)
+	(setq web-mode-php-offset    2))
+(add-hook 'web-mode-hook 'web-mode-hook)
