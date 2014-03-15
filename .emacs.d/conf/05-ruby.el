@@ -19,3 +19,8 @@
 
 ;; ruby-mode-hookに追加
 (add-hook 'ruby-mode-hook 'ruby-mode-hooks)
+
+;; Rinari
+;; http://www.curiosity-drives.me/2011/01/emacsrailsemacs-rinari-yasnippet.html
+(add-to-load-path "rinari" "rhtml")
+(require 'rinari)
