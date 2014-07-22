@@ -22,5 +22,5 @@
 
 ;; Rinari
 ;; http://www.curiosity-drives.me/2011/01/emacsrailsemacs-rinari-yasnippet.html
-(add-to-load-path "rinari" "rhtml")
-(require 'rinari)
+;(add-to-load-path "rinari" "rhtml")
+;(require 'rinari)
