@@ -22,6 +22,12 @@
 ;; .#* のバックアップファイルを作らない
 (setq auto-save-default nil)
 
+;; 右から左に読む言語に対応させないことで描画高速化
+(setq-default bidi-display-reordering nil)
+
+;; 同じ内容を履歴に保存しないようにする
+(setq history-delete-duplicates t)
+
 ;; ------------------------------------------------------------
 ;; @ font, encoding
 
