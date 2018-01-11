@@ -17,6 +17,20 @@ set fileformats=unix,dos,mac
 " start   : 挿入モード開始位置より手前の文字
 set backspace=indent,eol,start
 
+" Windowsでパスの区切り文字をスラッシュで扱う
+set shellslash
+
+" コマンドラインの履歴を10000件保存する
+set history=10000
+
+" 編集中のファイルが変更されたら自動で読み直す
+set autoread
+
+" コメントアウトからの改行時の自動コメントアウトをオフ
+set formatoptions-=ro
+autocmd FileType * setlocal formatoptions-=ro
+
+
 
 """"""""""""""""""""
 " バックアップ
@@ -49,9 +63,36 @@ set textwidth=0
 " ウインドウの幅より長い行は折り返して、次の行に続けて表示
 set wrap
 
+" タブ、改行などを視覚化
+set listchars=tab:>.,trail:_,extends:>,precedes:<,nbsp:%
+
+" 全角文字専用の設定
+set ambiwidth=double
+
 " 全角スペースの表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/
+
+" 対応する括弧やブレースを表示
+set showmatch matchtime=1
+
+" メニューバーを非表示にする
+set guioptions-=m
+
+" 右スクロールバーを非表示
+set guioptions+=R
+
+" 行番号の表示
+set number
+
+" Escの2回押しでハイライト消去
+nnoremap <Esc><Esc> :nohlsearch<CR><ESC>
+
+" シンタックスハイライト
+syntax on
+
+" 選択行の強調表示
+set cursorline
 
 
 """"""""""""""""""""
@@ -68,6 +109,9 @@ set hlsearch
 
 " インクリメンタルサーチ
 set incsearch
+
+" 検索がファイル末尾まで進んだら、ファイル先頭から再び検索
+set wrapscan
 
 
 """"""""""""""""""""
@@ -108,3 +152,15 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,euc-jp,cp932,iso-2022-jp
 set fileencodings+=,ucs-2le,ucs-2,utf-8
 
+""""""""""""""""""""
+" キーバインド
+""""""""""""""""""""
+" 矢印キーを無効にする
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
